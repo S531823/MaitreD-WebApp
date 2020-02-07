@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="./style.css">
         <script src="./logic.js"></script>
     </head>
-    
     <body>
         <div class="container">
             <header>
@@ -16,22 +15,22 @@
             <main>
                 <br><br>
                 <span class="label">Total:</span>
-                <input type="number" class="pullRight" id="totalInput" style="width: 80%;">
+                <input type="number" class="pullRight" id="totalInput" style="width: 80%;" onchange="calculate()">
                 <br><br>
                 <span class="label">Tip:</span>
-                <span class="info" id="tipInfo"></span>
+                <span id="tipInfo"></span>
                 <span class="pullRight">
                     <span class="label">Rate:</span>
-                    <input type="number" id="rateInput">
+                    <input type="number" id="rateInput" onchange="calculate()">
                 </span>
                 <br><br>
                 <span class="label">Tax:</span>
-                <span class="info" id="taxInfo"></span>
+                <span id="taxInfo"></span>
                 <br><br>
                 <span class="label">Grand Total:</span>
-                <span class="info" id="grandTotalInfo"></span>
+                <span id="grandTotalInfo"></span>
                 <br><br>
-                <div id="calculateBTN" onclick="calculate()">Calculate</div>
+                <div id="calculateBTN" onmousedown="calculate()">Calculate</div>
                 <br><br>
             </main>
             <hr>
