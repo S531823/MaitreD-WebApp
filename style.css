@@ -20,6 +20,11 @@ input {
     border-radius: 10px;
 }
 
+#grandTotalInfo {
+    font-size: 24px;
+    color: #3D6ACC;
+}
+
 #calculateBTN {
     display: block;
     margin: 0 auto;
