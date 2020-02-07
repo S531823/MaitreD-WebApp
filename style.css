@@ -1,5 +1,38 @@
+html {
+    font-family: "Avenir", "Century Gothic", sans-serif;
+}
+
 .container {
     margin: 0 40%;
+}
+
+header, footer {
+    text-align: center;
+}
+
+.label {
+    font-size: 18px;
+}
+
+input {
+    height: 20px;
+    border: 1px grey solid;
+    border-radius: 10px;
+}
+
+#calculateBTN {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px grey solid;
+    border-radius: 40px;
+}
+
+#calculateBTN:hover {
+    cursor: pointer;
+    background-color: #FFA585;
 }
 
 .pullRight {
