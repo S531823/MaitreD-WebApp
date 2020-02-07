@@ -1,15 +1,20 @@
 function calculate() {
     document.getElementById("errorMSG").innerHTML = ""; //clear error message
+    document.getElementById("totalInput").style.borderColor = "grey"; //clear error indicators
+    document.getElementById("rateInput").style.borderColor = "grey";
     
     //parseFloat converts the strings to floats
     var totalAmount = parseFloat(document.getElementById("totalInput").value);
     var rateAmount = parseFloat(document.getElementById("rateInput").value);
     
+    //error check the inputs
     if(isNaN(totalAmount)) {
-        document.getElementById("errorMSG").innerHTML = "Put in a real dollar amount, ya dingus."
+        document.getElementById("errorMSG").innerHTML = "Enter some valid inputs, ya dingus."
+        document.getElementById("totalInput").style.borderColor = "red";
     }
     if(isNaN(rateAmount)) { //if rate input is not a valid input, set it to 0.0
         rateAmount = 0.0;
+        document.getElementById("rateInput").style.borderColor = "red";
     }
 
     var tipAmount = parseFloat(totalAmount) * (parseFloat(rateAmount) * 0.01);
