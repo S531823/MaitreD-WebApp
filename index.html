@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Maitre D - Bill Calculator</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./logic.js"></script>
+    </head>
+    
+    <body>
+        <div class="container">
+            <header>
+                <h1>Maitre D</h1>
+            </header>
+            <nav></nav>
+            <hr>
+            <main>
+                <article>
+                    <section>
+                        <span class="label">Total:</span>
+                        <input type="number" class="pullRight" id="totalInput" style="width: 80%;">
+                        <br><br>
+                        <span class="label">Tip:</span>
+                        <span class="info" id="tipInfo"></span>
+                        <span class="pullRight">
+                            <span class="label">Rate:</span>
+                            <input type="number" id="rateInput">
+                        </span>
+                        <br><br>
+                        <span class="label">Tax:</span>
+                        <span class="info" id="taxInfo"></span>
+                        <br><br>
+                        <span class="label">Grand Total:</span>
+                        <span class="info" id="grandTotalInfo"></span>
+                        <br><br>
+                        <input type="button" id="calculateBTN" onclick="calculate()">
+                    </section>
+                </article>
+            </main>
+            <hr>
+            <footer>
+                <p>&copy; 2020 Tommy Vo. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>
