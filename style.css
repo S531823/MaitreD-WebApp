@@ -14,6 +14,11 @@ header, footer {
     font-size: 18px;
 }
 
+#errorMSG {
+    color: red;
+    font-size: 14px;
+}
+
 input {
     height: 20px;
     border: 1px grey solid;
