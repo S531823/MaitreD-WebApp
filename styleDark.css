@@ -1,0 +1,21 @@
+html {
+    background-color: #222;
+}
+
+header, .label, #tipInfo, #taxInfo, #grandTotalInfo, footer {
+    color: white;
+}
+
+input, #calculateBTN, #darkModeBTN {
+    border: 1px white solid;
+    color: white;
+}
+
+#grandTotalInfo {
+    font-size: 24px;
+    color: #3D6ACC;
+}
+
+#calculateBTN:hover {
+    background-color: #DDD;
+}

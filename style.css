@@ -48,3 +48,19 @@ input {
 .pullRight {
     float: right;
 }
+
+#darkModeBTN {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px grey solid;
+    border-radius: 40px;
+    position: absolute;
+    left: 3%;
+    bottom: 3%;
+}
+
+#darkModeBTN:hover {
+    cursor: pointer;
+}

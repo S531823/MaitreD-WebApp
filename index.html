@@ -4,9 +4,10 @@
         <meta charset="UTF-8"/>
         <title>Maitre D - Bill Calculator</title>
         <link rel="stylesheet" href="./style.css">
+        <link id="darkModeStyleSheet" rel="stylesheet" href="./styleDark.css">
         <script src="./logic.js"></script>
     </head>
-    <body>
+    <body onload="toggleDarkMode()">
         <div class="container">
             <header>
                 <h1>Maitre D</h1>
@@ -34,6 +35,7 @@
                 <br><br>
                 <div id="calculateBTN" onmousedown="calculate()">Calculate</div>
                 <br><br>
+                <div id="darkModeBTN" onmousedown="toggleDarkMode()">Click me</div>
             </main>
             <hr>
             <footer>

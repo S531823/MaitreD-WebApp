@@ -43,3 +43,20 @@ function calculate() {
         document.getElementById("grandTotalInfo").innerHTML = "$" + grandTotalAmount.toFixed(2);
     }
 }
+
+var toggle = 0;
+
+function toggleDarkMode() {
+    var darkSheet = document.getElementById("darkModeStyleSheet");
+    toggle++;
+    
+    if(toggle % 2 == 0) {
+        darkSheet.disabled = false;
+        document.getElementById("darkModeBTN").innerHTML = "Light Mode"
+    }
+    else {
+        darkSheet.disabled = true;
+        document.getElementById("darkModeBTN").innerHTML = "Dark Mode"
+    }
+    
+}
