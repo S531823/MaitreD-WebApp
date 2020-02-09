@@ -19,3 +19,7 @@ input, #calculateBTN, #darkModeBTN {
 #calculateBTN:hover {
     background-color: #DDD;
 }
+
+input {
+    color: black;
+}
