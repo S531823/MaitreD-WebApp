@@ -4,8 +4,8 @@ function calculate() {
     document.getElementById("rateInput").style.borderColor = "grey";
     
     //parseFloat converts the strings to floats
-    var totalAmount = parseFloat(document.getElementById("totalInput").value);
-    var rateAmount = parseFloat(document.getElementById("rateInput").value);
+    let totalAmount = parseFloat(document.getElementById("totalInput").value);
+    let rateAmount = parseFloat(document.getElementById("rateInput").value);
     
     //error check the inputs
     if(isNaN(totalAmount)) {
@@ -17,9 +17,9 @@ function calculate() {
         document.getElementById("rateInput").style.borderColor = "red";
     }
 
-    var tipAmount = parseFloat(totalAmount) * (parseFloat(rateAmount) * 0.01);
-    var taxAmount = parseFloat(totalAmount) * 0.055;
-    var grandTotalAmount = parseFloat(totalAmount) + parseFloat(tipAmount) + parseFloat(taxAmount);
+    let tipAmount = parseFloat(totalAmount) * (parseFloat(rateAmount) * 0.01);
+    let taxAmount = parseFloat(totalAmount) * 0.055;
+    let grandTotalAmount = parseFloat(totalAmount) + parseFloat(tipAmount) + parseFloat(taxAmount);
     
     //toFixed() rounds the values to the ()th decimal
     if(isNaN(tipAmount)) {
@@ -44,10 +44,10 @@ function calculate() {
     }
 }
 
-var toggle = 0;
+let toggle = 0;
 
 function toggleDarkMode() {
-    var darkSheet = document.getElementById("darkModeStyleSheet");
+    const darkSheet = document.getElementById("darkModeStyleSheet");
     toggle++;
     
     if(toggle % 2 == 0) {
